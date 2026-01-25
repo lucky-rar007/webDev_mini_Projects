@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6fb;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.feature-card-container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-card:hover,
+.feature-card:focus-within {
+  transform: scale(1.03);
+  box-shadow: 0 0 18px rgba(49, 130, 206, 0.5);
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.feature-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.feature-card input[type="checkbox"] {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #666;
+  border-radius: 4px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  margin-top: 4px;
+}
+
+.feature-card input[type="checkbox"]::before {
+  content: "✓";
+  font-size: 16px;
+  color: white;
+  transform: scale(0);
+  transition: transform 0.2s ease;
+}
+
+.feature-card input[type="checkbox"]:checked {
+  background-color: #3182ce;
+  border-color: #3182ce;
+}
+
+.feature-card input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.feature-card input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(49, 130, 206, 0.8);
+}
