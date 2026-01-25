@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: #1c1c1c;
+  padding: 20px;
+}
+
+#email {
+  background-color: #fdf6e3;
+  width: 500px;
+  max-width: 90vw;
+  padding: 50px;
+  border: 2px solid #333;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  position: relative; /* container for absolute #top-secret */
+  margin: 50px auto;
+}
+
+.badge {
+  display: inline-block;
+  padding: 12px 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #e74c3c;
+  text-align: center;
+  border: 3px solid red;
+  border-radius: 5px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+  font-size: 0.9rem;
+  max-width: 90%; /* prevents overflow on small screens */
+  word-break: break-word;
+  position: relative;
+}
+
+#confidential {
+  transform: rotate(-8deg);
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+#top-secret {
+  position: absolute;
+  top: 73%;   
+  left: 65%; 
+  transform: rotate(10deg);
+}
+
+#email p {
+  margin-top: 25px;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #222;
+}
+
+.blurred {
+  filter: blur(3px);
+  font-weight: bold;
+  color: #555;
+  background-color: rgba(0,0,0,0.05);
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
+@media (max-width: 550px) {
+  #email {
+    padding: 30px;
+  }
+
+  .badge {
+    display: block;
+    margin: 10px auto;
+    transform: rotate(0deg);
+    position: relative; 
+    top: auto;
+    left: auto;
+  }
+}
