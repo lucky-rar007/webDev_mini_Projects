@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+body {
+  background-color: #0b3d2e;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#playing-cards{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+
+}
+.card {  
+    display: flex;
+  justify-content: space-between;
+
+  width: clamp(12rem, 18vw, 16rem);
+  aspect-ratio: 13 / 20;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+
+  flex-shrink: 0;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+
+ .left{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;    
+} 
+
+
+.upside-down{
+    transform: rotate(180deg);
+}
+
+.shift-right {
+  position: relative;
+  left: 0.2em;
+}
