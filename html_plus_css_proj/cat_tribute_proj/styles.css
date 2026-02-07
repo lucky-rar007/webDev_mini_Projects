@@ -11,6 +11,7 @@ body {
     overflow-x: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    height:100vh;   /* Set the height to 100% of the viewport height TO REMOVE BROWSER DEFAULT SCROLLBAR*/
 }
 body::-webkit-scrollbar {
     width: 0px;
