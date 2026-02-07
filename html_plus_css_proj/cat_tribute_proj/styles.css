@@ -1,0 +1,119 @@
+html, body {
+    overflow-x: hidden;       
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    background-color: antiquewhite;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 95%;
+    max-width: 960px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#img-div img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#img-div img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+#img-caption {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#tribute-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: aliceblue;
+}
+
+#tribute-info > ul > li {
+    margin: 0.5rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: aliceblue;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+#tribute-info > ul > li:hover {
+    background-color: #1E90FF;
+    color: aliceblue;
+    transform: scale(1.05);
+}
+
+#tribute-info p {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: aliceblue;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+footer a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
