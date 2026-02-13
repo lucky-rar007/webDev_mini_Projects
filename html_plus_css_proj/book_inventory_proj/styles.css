@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+font-family:'Libre Bodoni', serif;
+}
+html{
+    background-color: white;
+}
+body {
+    margin: 0.5em auto;
+    width: 95vw;
+    min-width: 320px;
+    max-width: 1200px; 
+    height: auto; 
+    background-color: #A82323; 
+    border-radius: 0.6em;
+    border: 0.15em solid #A82323;
+    box-shadow: 0.3em 0.3em 0.6em rgba(0, 0, 0, 0.35);
+    position: relative;
+    padding: 1.5em; 
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    margin-top: 0.1em;
+}
+
+table {
+    width: 100%;        
+    max-width: 100%;    
+    min-width: 300px;   
+    margin: 2em auto;
+    font-size: 1.4em;
+    border-collapse: separate; 
+    border-spacing: 0;         
+    border-radius: 0.6em;      
+    overflow: hidden;          
+}
+
+td, th {
+    border-bottom: 0.1em solid #ccc;
+    padding: 0.5em;
+    text-align: center;
+    color: black;
+    word-break: break-word; 
+}
+
+th{
+    background-color:#BCD9A2;
+}
+td{
+    background-color: #FEFFD3;
+}
+
+
+tr[class~="read"] span[class~="status"] {
+    background-color: #005F02;
+    color: #F2E3BB;
+    padding: 0.2em 0.9em;
+    border-radius: 0.4em;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+tr[class~="read"] span[class~="status"]:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.3);
+}
+
+
+
+tr[class~="in-progress"] span[class~="status"] {
+    background-color: 
+#EE6983;
+    color: 
+#FFE1AF;
+    padding: 0.2em 0.9em;
+    border-radius: 0.4em;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+tr[class~="in-progress"] span[class~="status"]:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.3);
+}
+
+
+tr[class~="to-read"] span[class~="status"] {
+    background-color: #850E35;
+    color:#DDDEAB;
+    padding: 0.2em 0.9em;
+    border-radius: 0.4em;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+tr[class~="to-read"] span[class~="status"]:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.3);
+}
+
+
+tbody tr {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+tbody tr td {
+    transition: transform 0.3s ease;
+}
+
+tbody tr:hover {
+    transform: scale(1.05);
+    z-index: 1; 
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3); 
+}
+
+tr td[class="book"]{
+  text-indent: 0.4em;
+}
+
+.rate {
+  display: flex;
+  gap: 0.3em; 
+}
+
+
+.rate span {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%; 
+  background-color: #ccc; 
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.rate.one span:nth-child(1),
+.rate.two span:nth-child(-n+2),
+.rate.three span:nth-child(-n+3) {
+  background-color: #FFD700; 
+}
+
+
+td .rate {
+    padding-right: 0.4em;  
+    display: flex;
+    gap: 0.3em;
+}
+
+.rate span {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+tr:hover .rate span {
+    transform: scale(1.1); 
+}
