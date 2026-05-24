@@ -9,3 +9,14 @@ function confirmEnding(str,check){
 let str="Hello World";
 let check="World";
 console.log(confirmEnding(str,check));
+
+
+/*
+Another approach 
+
+function confirmEnding(str, sub) {
+    return str.includes(sub, str.length - sub.length);
+}
+
+
+*/
