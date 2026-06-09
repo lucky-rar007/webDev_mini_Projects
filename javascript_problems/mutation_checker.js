@@ -1,13 +1,14 @@
 function mutation(arr){
-  let word1=arr[0].toLowerCase();
-  let word2=arr[1].toLowerCase();
-  for(let i=0;i<word2.length;i++){
-    if (!(word1.includes(word2[i]))){
-      return false;
+  let first=arr[0].toLowerCase().split("");
+  let sec=arr[1].toLowerCase().split("");
+  if(first.length!=sec.length){
+    return false;
+  }
+  let comp=sec.length;
+  for(let i=0;i<first.length;i++){
+    if(first.includes(sec[i])){
+      comp--;
     }
-  
-  }return true;
+  }
+  return comp==0? true : false ;
 }
-
-let arr=["hello","Hello"];
-console.log(mutation(arr));
