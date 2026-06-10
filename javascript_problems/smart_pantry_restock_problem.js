@@ -57,12 +57,6 @@ function groupByZone(actions) {
 
   return grouped;
 }
-
-function clonePantry(pantry) {
-  return pantry.map(item => ({ ...item }));
-}
-
-// Optional runner (final step)
 function processPantry(rawData, pantry) {
   const shipment = parseShipment(rawData);
   const pantryCopy = clonePantry(pantry);
@@ -70,7 +64,7 @@ function processPantry(rawData, pantry) {
   const actions = planRestock(pantryCopy, shipment);
   const grouped = groupByZone(actions);
 
-  console.log(grouped);
+  console.log(grouped); 
 
   return grouped;
 }
