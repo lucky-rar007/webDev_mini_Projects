@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f8963b;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px;
+    font-size: larger;
+    color: #fff;
+}
+#text-input {
+    width: 400px;     
+    height: 200px;    
+    padding: 10px;     
+    font-size: 16px;
+    border-radius:8px;   
+    border: 8px solid #944700;
+    resize: none;      
+}
