@@ -1,0 +1,146 @@
+:root {
+  --tea-green: #ccd5ae;
+  --beige: #e9edc9;
+  --cornsilk: #fefae0;
+  --papaya-whip: #faedcd;
+  --light-bronze: #d4a373;
+
+  --text: #3f3a32;
+  --white: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: linear-gradient(135deg, var(--tea-green), var(--beige));
+  color: var(--text);
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--light-bronze);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  background: var(--cornsilk);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px var(--shadow);
+}
+
+fieldset {
+  border: 2px solid var(--papaya-whip);
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 20px;
+  background: var(--white);
+}
+
+legend {
+  padding: 0 10px;
+  color: var(--light-bronze);
+  font-weight: bold;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+select {
+  padding: 12px;
+  border: 2px solid var(--papaya-whip);
+  border-radius: 10px;
+  font-size: 16px;
+  background: var(--white);
+  color: var(--text);
+  transition: 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--light-bronze);
+  box-shadow: 0 0 0 4px rgba(212, 163, 115, 0.2);
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: var(--light-bronze);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: #bc8d60;
+  box-shadow: 0 8px 18px rgba(212, 163, 115, 0.3);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.output {
+  margin-top: 25px;
+  padding: 20px;
+  background: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px var(--shadow);
+  text-align: center;
+}
+
+.output hr {
+  margin: 15px 0;
+  border: none;
+  height: 1px;
+  background: var(--papaya-whip);
+}
+
+.output p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.output span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.surplus {
+  color: #8b5e3c;
+}
+
+.deficit {
+  color: #6b8f3d;
+}
+
+.hide {
+  display: none;
+}
