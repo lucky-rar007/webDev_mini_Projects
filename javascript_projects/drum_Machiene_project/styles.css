@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ink-black: #001219;
+  --dark-teal: #005f73;
+  --dark-cyan: #0a9396;
+  --pearl-aqua: #94d2bd;
+  --vanilla-custard: #e9d8a6;
+  --golden-orange: #ee9b00;
+  --burnt-caramel: #ca6702;
+  --rusty-spice: #bb3e03;
+  --oxidized-iron: #ae2012;
+  --brown-red: #9b2226;
+
+  --shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+
+  background: linear-gradient(135deg, var(--ink-black), var(--dark-teal));
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--vanilla-custard);
+}
+
+#drum-machine {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 20px;
+
+  padding: 2rem;
+
+  width: min(90vw, 520px);
+
+  box-shadow: var(--shadow);
+}
+
+#display {
+  background: var(--ink-black);
+
+  color: var(--golden-orange);
+
+  text-align: center;
+
+  padding: 1rem;
+
+  border-radius: 12px;
+
+  margin-bottom: 1.5rem;
+  margin-top: 1.25rem;
+  font-size: 1.25rem;
+
+  letter-spacing: 1px;
+
+  min-height: 60px;
+
+  display: grid;
+
+  place-items: center;
+}
+
+#pad-bank {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1rem;
+}
+
+.drum-pad {
+  aspect-ratio: 1;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: var(--dark-cyan);
+
+  color: white;
+
+  font-size: 1.5rem;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.15s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.drum-pad:hover {
+  background: var(--golden-orange);
+
+  transform: translateY(-4px);
+}
+
+.drum-pad:active {
+  transform: scale(0.95);
+
+  background: var(--burnt-caramel);
+}
+.drum-pad.active {
+  transform: scale(0.95);
+  background: var(--burnt-caramel);
+}
+audio {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  #drum-machine {
+    padding: 1.25rem;
+  }
+
+  .drum-pad {
+    font-size: 1.2rem;
+  }
+}
