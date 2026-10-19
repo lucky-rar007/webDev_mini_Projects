@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PET STORE</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins:wght@700&family=Montserrat:wght@600&family=Baloo+2&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header id="header">   
+    <div class="headermain">
+        <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8zMl9pbGx1c3RyYXRpb25fb2ZfZXVyb3BlYW5fc2hvcnRoYWlyX19pc29sYXRlZF83OWU0MjY3Yy1hYTZkLTQ1MTEtOTlhMy0yMzQ0YWYwNWQ5YTAucG5n.png" alt="Purrfect Pets Logo" id="header-img" />
+          <h1>Purrfect Pets</h1>
+    </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#Email">Get Started</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#howitworks">How it Works</a></li>
+          <li><a class="nav-link" href="#plans">Care Plans</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="Email">
+        <h2>Handpicked Happiness for Your Feline Friend</h2>
+        <form id="form" action="https://www.freecodecamp.org/email-submit">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email to get exclusive cat deals"
+            required
+          />
+          <input type="submit" id="submit" value="Get Started" />
+        </form>
+      </section>
+
+      <section id="services">
+        <h2>Services</h2>
+        <div class="service-tile">
+          <i class="fa-solid fa-fish service-icon" style="color: rgba(255, 212, 59, 1)"></i>
+          <h3>1. Premium Cat Nutrition</h3>
+          <p>We provide high-quality, vet-approved meals made from natural ingredients to keep your cat healthy, energetic, and thriving every day.</p>
+        </div>
+        <div class="service-tile">
+          <i class="fa-solid fa-baseball service-icon" style="color: rgba(255, 212, 59, 1)"></i>
+          <h3>2. Toys & Enrichment</h3>
+          <p>From interactive toys to scratch posts, our products keep your feline mentally stimulated, active, and happily entertained.</p>
+        </div>
+        <div class="service-tile">
+          <i class="fa-solid fa-spray-can-sparkles service-icon" style="color: rgba(255, 212, 59, 1)"></i>
+          <h3>3. Comfort & Care Essentials</h3>
+          <p>Cozy beds, grooming tools, and daily care products designed to keep your cat comfortable, clean, and completely spoiled.</p>
+        </div>
+      </section>
+
+      <section id="howitworks">
+        <!-- Added id="video" and proper src -->
+        <video id="video" src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+      </section>
+
+      <section id="plans">
+        <h2>Care Plans</h2>
+
+        <div class="plan-tile">
+            <h3>Starter Plan</h3>
+            <ul>
+                <li>High-quality dry food</li>
+                <li>1 interactive toy</li>
+                <li>Basic cozy cat bed</li>
+            </ul>
+            <p>Starting at $29/month</p>
+        </div>
+
+        <div class="plan-tile">
+            <h3>Premium Plan</h3>
+            <ul>
+                <li>Wet & dry food variety pack</li>
+                <li>2 interactive toys & scratch post</li>
+                <li>Comfortable plush cat bed</li>
+                <li>Monthly surprise treat</li>
+            </ul>
+            <p>Starting at $59/month</p>
+        </div>
+
+        <div class="plan-tile">
+            <h3>Royal Plan</h3>
+            <ul>
+                <li>Gourmet wet & dry food selection</li>
+                <li>Premium interactive toys & deluxe scratch tower</li>
+                <li>Luxury cat lounge bed</li>
+                <li>Monthly curated goodies & wellness kit</li>
+            </ul>
+            <p>Starting at $99/month</p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
